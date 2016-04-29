@@ -1,0 +1,64 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "bootstrap";
+@import "bootswatch";
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+
+  background-color: #000;
+
+  height: auto;
+}
+
+hr {
+  border-color: white;
+}
+
+header, .blocky {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+
+  padding-top: $navbar-height;
+
+  z-index: 0;
+}
+
+footer {
+  background-color: $gray-dark;
+  height: 300px;
+}
+
+.hugebg {
+  background-color: #141414;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-image: url('../images/header-bg.jpg');
+}
+
+#whatis {
+  background-image: url('../images/periscope-bg.jpg');
+}
+
+#speed {
+  background-image: url('../images/speed-bg.jpg');
+}
+
+#advantage {
+  background-image: url('../images/whatis-bg.jpg');
+}
+
+#order {
+  background-image: url('../images/order-bg.jpg');
+}
