@@ -9186,7 +9186,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   border: none;
 }
 
-/* line 10, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 body {
   width: 100%;
   overflow-x: hidden;
@@ -9194,46 +9194,72 @@ body {
   height: auto;
 }
 
-/* line 19, ../sass/screen.scss */
-hr {
-  border-color: white;
-}
-
-/* line 23, ../sass/screen.scss */
-header, .blocky {
+/* line 21, ../sass/screen.scss */
+.block, .section, header {
+  display: block;
+  box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
   height: auto;
   overflow: hidden;
-  padding-top: 80px;
   z-index: 0;
 }
-/* line 33, ../sass/screen.scss */
-header h1, .blocky h1 {
+
+/* line 35, ../sass/screen.scss */
+.section {
+  padding-top: 80px;
+}
+/* line 40, ../sass/screen.scss */
+.section h1 {
+  font-size: 46px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 100px;
 }
-/* line 38, ../sass/screen.scss */
-header h2, .blocky h2 {
+/* line 46, ../sass/screen.scss */
+.section h2 {
   padding-left: 120px;
 }
 
-/* line 43, ../sass/screen.scss */
-footer {
-  background-color: #121212;
-  height: 150px;
+/* line 52, ../sass/screen.scss */
+header {
+  padding-top: 240px;
+}
+/* line 57, ../sass/screen.scss */
+header h1 {
+  font-size: 72px;
+  letter-spacing: 3.5px;
+}
+/* line 61, ../sass/screen.scss */
+header h2 {
+  font-size: 26px;
+  letter-spacing: 1.3px;
+}
+/* line 65, ../sass/screen.scss */
+header hr {
+  border-color: white;
+  border-width: 2px;
+  max-width: 60%;
 }
 
-/* line 48, ../sass/screen.scss */
-.hugebg {
-  background-color: #141414;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/* line 72, ../sass/screen.scss */
+.intro {
+  margin-top: 180px;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
+#phone {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+/* line 90, ../sass/screen.scss */
 #scroll-bg {
   display: block;
   box-sizing: border-box;
@@ -9242,31 +9268,47 @@ footer {
   left: 0;
   width: 100%;
   height: 100vh;
+  background-image: url("../images/header-bg.png");
   transform: scale(1.3);
   z-index: -1;
 }
 
-/* line 69, ../sass/screen.scss */
-#scroll-bg {
-  background-image: url("../images/header-bg.png");
+/* line 107, ../sass/screen.scss */
+.hugebg {
+  background-color: #141414;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* line 73, ../sass/screen.scss */
-#whatis {
-  background-image: url("../images/periscope-bg-2.png");
-}
-
-/* line 77, ../sass/screen.scss */
-#speed {
-  background-image: url("../images/speed-bg.png");
-}
-
-/* line 81, ../sass/screen.scss */
-#advantage {
+/* line 115, ../sass/screen.scss */
+#periscope {
   background-image: url("../images/periscope-bg.png");
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
+#advantage {
+  background-image: url("../images/periscope-bg-2.png");
+  z-index: 100;
+}
+
+/* line 127, ../sass/screen.scss */
 #order {
   background-image: url("../images/form-bg.png");
+  margin-bottom: 160px;
+  -webkit-box-shadow: 0 0 35px rgba(1, 1, 1, 0.6);
+  box-shadow: 0 0 35px rgba(1, 1, 1, 0.6);
+}
+
+/* line 135, ../sass/screen.scss */
+footer {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 160px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  background-color: #202020;
 }

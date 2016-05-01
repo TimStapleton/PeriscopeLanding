@@ -2,12 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Advertisly</title>
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Advertisly</title>
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body id="top">
+  <!--MENU-NAVBAR-->
   <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -18,59 +19,80 @@
             <span class="icon-bar"></span>
           </button>
           <a href="" class="navbar-brand"><img src="" alt=""></a>
-          <a class="navbar-brand" href="#">Advertisly</a>
+          <a class="navbar-brand pagescroll" href="#top">TrendStreamer</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#about">Что такоеPeriscope ?</a></li>
-            <li><a href="#offer">Преимущества</a></li>
+            <li><a href="#periscope" class="pagescroll">Что такое Periscope ?</a></li>
+            <li><a href="#advantage" class="pagescroll">Преимущества</a></li>
+            <li><a href="#order" class="pagescroll">Как заказать ?</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">Зарегестрироваться</a></li>
-            <li><a href="#offer">Войти</a></li>
+            <li><a href="#">Зарегестрироваться</a></li>
+            <li><a href="#">Войти</a></li>
           </ul>
         </div>
       </div>
-    </nav>
+  </nav>
 
+  <!--HEADER-->
   <header>
     <div class="hugebg" id="scroll-bg"></div>
-    <div class="container">
-      <div class="col-lg-6 col-md-6 col-xs-12">
+    <div id="iphone">
+      <img src="images/phone.png" alt="">
+    </div>
+    <div class="container-fluid">
+      <div class="col-xs-12 col-md-6 col-lg-6">
         <h1 class="text-center">TrendStreamer</h1>
-        <h3 class="text-left">Первая в России биржа рекламы Periscope</h3>
-      </div>
-      <div class="col-lg-6 col-md-6 col-xs-12">
-        <h1></h1>
-        <h3></h3>
+        <hr>
+        <h2 class="text-center">Биржа рекламы для Periscope<br>Первая в России<br><br></h2>
+        <h2 class="text-center intro">
+          <strong>12 000</strong> блоггеров, готовых продивнуть ваш брэнд.<br>
+          <strong>13 000</strong> рекламодателей, нуждающихся в рекламе.
+        </h2>
+
       </div>
     </div>
   </header>
-  <div class="container blocky hugebg" id="whatis">
-    <h1 class="text-center">Что такое Periscope ?</h1>
-    <h2 class="text-left"><strong>12 000</strong> блоггеров, готовых продивнуть ваш брэнд.<br><strong>1 000</strong> рекламодателей, нуждающихся в рекламе.</h2>
-  </div>
-  <div class="container blocky hugebg" id="speed">
-    <h1 class="text-center">Дешевизна и Скорость</h1>
-    <h2 class="text-left">текст слайда</h2>
-  </div>
-  <div class="container blocky hugebg" id="advantage">
-    <h1 class="text-center">Большой Охват и Вовлеченность Аудитории</h1>
-    <h2 class="text-left">В среднем, трансляции в Periscope длятся 15 минут.<br>
-      За это время ее успевают посмотреть 100 тысяч человек<br>
-      И оставить свыше 10 тысяч комментариев.</h2>
-  </div>
-  <div class="container blocky hugebg" id="order">
-    <h1 class="text-center">Как заказать рекламу ?</h1>
-    <h2 class="text-left">текст слайда</h2>
-  </div>
+
+  <!--PERISCOPE-SECTION-->
+  <section class="section hugebg"  id="periscope">
+    <div class="container">
+      <h1 class="text-center">Что такое Periscope ?</h1>
+       </div>
+  </section>
+
+  <!--ADVANTAGES-SECTION-->
+  <section class="section hugebg" id="advantage">
+    <div class="container">
+      <h1 class="text-center">Преимущества</h1>
+      <h2 class="text-left">текст слайда</h2>
+    </div>
+  </section>
+
+  <!--ORDER-SECTION-->
+  <section class="section hugebg" id="order">
+    <div class="container">
+      <h1 class="text-center">Как заказать рекламу ?</h1>
+      <h2 class="text-left">текст слайда</h2>
+    </div>
+  </section>
+
+
+  <!--FOOTER-->
   <footer>
 
   </footer>
 
+  <!--SCRIPTS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!--JQUERY EASING-->
+  <script src="js/jquery-easing.js"></script>
+  <!--PARALLAX-->
   <script src="js/scroll.js"></script>
+  <!--SMOOTH-SCROLLING-->
+  <script src="js/smoothscroll.js"></script>
 </body>
 </html>
