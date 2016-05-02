@@ -13,6 +13,9 @@ $(window).scroll(function(){
       'transform' : 'translate(0px, '+  (pxScroll)/7 +'px)'
   })
   $('.intro').css({
-      'transform' : 'translate(0px, '+  (pxScroll)/5 +'px)'
+      'transform' : 'translate(0px, '+  (pxScroll)/3 +'px)'
+  })
+  $('#iphone').css({
+      'transform' : 'translate(0px, '+  (pxScroll)/10 +'px)'
   })
 });

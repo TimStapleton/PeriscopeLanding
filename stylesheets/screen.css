@@ -9195,12 +9195,13 @@ body {
 }
 
 /* line 21, ../sass/screen.scss */
-.block, .section, header {
+.block, .section, header, .cover {
   display: block;
   box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
   height: auto;
+  max-height: 100vh;
   overflow: hidden;
   z-index: 0;
 }
@@ -9223,32 +9224,33 @@ body {
 
 /* line 52, ../sass/screen.scss */
 header {
-  padding-top: 240px;
+  overflow: hidden !important;
+  padding-top: 160px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 header h1 {
   font-size: 72px;
   letter-spacing: 3.5px;
 }
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 header h2 {
   font-size: 26px;
   letter-spacing: 1.3px;
 }
-/* line 65, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 header hr {
   border-color: white;
   border-width: 2px;
   max-width: 60%;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .intro {
-  margin-top: 180px;
+  margin-top: 20px;
 }
 
-/* line 76, ../sass/screen.scss */
-#phone {
+/* line 78, ../sass/screen.scss */
+#iphone {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -9256,10 +9258,23 @@ header hr {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 1;
+  overflow: hidden;
+}
+/* line 91, ../sass/screen.scss */
+#iphone img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  align: right;
+  z-index: 0;
+  height: 90vh;
+  width: auto;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #scroll-bg {
   display: block;
   box-sizing: border-box;
@@ -9273,7 +9288,7 @@ header hr {
   z-index: -1;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .hugebg {
   background-color: #141414;
   background-size: cover;
@@ -9281,18 +9296,27 @@ header hr {
   background-attachment: fixed;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 #periscope {
   background-image: url("../images/periscope-bg.png");
-}
-
-/* line 119, ../sass/screen.scss */
-#advantage {
-  background-image: url("../images/periscope-bg-2.png");
   z-index: 100;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
+.cover {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  z-index: 100;
+}
+
+/* line 149, ../sass/screen.scss */
+#advantage {
+  background-image: url("../images/periscope-bg-2.png");
+  z-index: 101;
+}
+
+/* line 157, ../sass/screen.scss */
 #order {
   background-image: url("../images/form-bg.png");
   margin-bottom: 160px;
@@ -9300,7 +9324,7 @@ header hr {
   box-shadow: 0 0 35px rgba(1, 1, 1, 0.6);
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 footer {
   display: block;
   box-sizing: border-box;

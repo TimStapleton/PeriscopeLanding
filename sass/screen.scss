@@ -25,8 +25,8 @@ body {
   width: 100%;
   min-height: 100vh;
   height: auto;
+  max-height: 100vh;
   overflow: hidden;
-
 
   z-index: 0;
 }
@@ -52,7 +52,9 @@ body {
 header {
   @extend .block;
 
-  padding-top: $navbar-height*3;
+  overflow: hidden !important;
+
+  padding-top: $navbar-height*2;
 
   h1 {
     font-size: 72px;
@@ -70,10 +72,10 @@ header {
 }
 
 .intro {
-  margin-top: 180px;
+  margin-top: 20px;
 }
 
-#phone {
+#iphone {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -83,7 +85,23 @@ header {
   right: 0;
   bottom: 0;
 
-  z-index: 100;
+  z-index: 1;
+  overflow: hidden;
+
+  img {
+    display:block;
+    position: absolute;
+    bottom:0;
+    right:0;
+
+    text-align: right;
+    align: right;
+
+    z-index: 0;
+
+    height: 90vh;
+    width: auto;
+  }
 }
 
 //PARALLAX BG
@@ -114,12 +132,24 @@ header {
 //SECTIONS IMAGES
 #periscope {
   background-image: url('../images/periscope-bg.png');
+
+  z-index: 100;
+}
+
+.cover {
+  @extend .block;
+
+  position: absolute;
+  top: 100vh;
+  left: 0;
+
+  z-index: 100;
 }
 
 #advantage {
   background-image: url('../images/periscope-bg-2.png');
 
-  z-index: 100;
+  z-index: 101;
 }
 
 $footer-height: 160px;
