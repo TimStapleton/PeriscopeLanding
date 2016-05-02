@@ -2259,7 +2259,7 @@ dd {
 .dl-horizontal dd:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 211, ../sass/bootstrap/_type.scss */
   .dl-horizontal dt {
     float: left;
@@ -3821,9 +3821,9 @@ legend {
   margin-bottom: 21px;
   font-size: 22.5px;
   line-height: inherit;
-  color: #EBEBEB;
+  color: #218f6c;
   border: 0;
-  border-bottom: 1px solid #DC5348;
+  border-bottom: 1px solid transparent;
 }
 
 /* line 32, ../sass/bootstrap/_forms.scss */
@@ -5082,7 +5082,7 @@ tbody.collapse.in {
   margin-bottom: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 207, ../sass/bootstrap/_dropdowns.scss */
   .navbar-right .dropdown-menu {
     right: 0;
@@ -5696,7 +5696,7 @@ tbody.collapse.in {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 11, ../sass/bootstrap/_navbar.scss */
   .navbar {
     border-radius: 3;
@@ -5712,7 +5712,7 @@ tbody.collapse.in {
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 31, ../sass/bootstrap/_navbar.scss */
   .navbar-header {
     float: left;
@@ -5741,7 +5741,7 @@ tbody.collapse.in {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 50, ../sass/bootstrap/_navbar.scss */
   .navbar-collapse {
     width: auto;
@@ -5787,7 +5787,7 @@ tbody.collapse.in {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 108, ../sass/bootstrap/_navbar.scss */
   .container > .navbar-header,
   .container > .navbar-collapse,
@@ -5803,7 +5803,7 @@ tbody.collapse.in {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 128, ../sass/bootstrap/_navbar.scss */
   .navbar-static-top {
     border-radius: 0;
@@ -5818,7 +5818,7 @@ tbody.collapse.in {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 138, ../sass/bootstrap/_navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -5855,7 +5855,7 @@ tbody.collapse.in {
 .navbar-brand > img {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 180, ../sass/bootstrap/_navbar.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -5890,7 +5890,7 @@ tbody.collapse.in {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 193, ../sass/bootstrap/_navbar.scss */
   .navbar-toggle {
     display: none;
@@ -5907,7 +5907,7 @@ tbody.collapse.in {
   padding-bottom: 10px;
   line-height: 21px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 243, ../sass/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -5932,7 +5932,7 @@ tbody.collapse.in {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 232, ../sass/bootstrap/_navbar.scss */
   .navbar-nav {
     float: left;
@@ -6022,7 +6022,7 @@ tbody.collapse.in {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 298, ../sass/bootstrap/_navbar.scss */
   .navbar-form .form-group {
     margin-bottom: 5px;
@@ -6032,7 +6032,7 @@ tbody.collapse.in {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 286, ../sass/bootstrap/_navbar.scss */
   .navbar-form {
     width: auto;
@@ -6083,7 +6083,7 @@ tbody.collapse.in {
   margin-top: 29.5px;
   margin-bottom: 29.5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 359, ../sass/bootstrap/_navbar.scss */
   .navbar-text {
     float: left;
@@ -6092,7 +6092,7 @@ tbody.collapse.in {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 379, ../sass/bootstrap/_navbar.scss */
   .navbar-left {
     float: left !important;
@@ -6167,7 +6167,7 @@ tbody.collapse.in {
   background-color: white;
   color: #EBEBEB;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 473, ../sass/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #EBEBEB;
@@ -6268,7 +6268,7 @@ tbody.collapse.in {
   background-color: #d83f33;
   color: #EBEBEB;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 607, ../sass/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: transparent;
@@ -9186,7 +9186,21 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   border: none;
 }
 
-/* line 11, ../sass/screen.scss */
+@font-face {
+  font-family: 'Idealist Sans';
+  src: url("../fonts/idealist/idealist_sans-webfont.eot");
+  src: url("../fonts/idealist/idealist_sans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/idealist/idealist_sans-webfont.woff2") format("woff2"), url("../fonts/idealist/idealist_sans-webfont.woff") format("woff"), url("../fonts/idealist/idealist_sans-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Idealist Sans';
+  src: url("../fonts/idealist/idealist_sans_light-webfont.eot");
+  src: url("../fonts/idealist/idealist_sans_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/idealist/idealist_sans_light-webfont.woff2") format("woff2"), url("../fonts/idealist/idealist_sans_light-webfont.woff") format("woff"), url("../fonts/idealist/idealist_sans_light-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/* line 13, ../sass/screen.scss */
 body {
   width: 100%;
   overflow-x: hidden;
@@ -9194,7 +9208,71 @@ body {
   height: auto;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6, a, p {
+  font-family: 'Idealist Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: none !important;
+}
+
+/* line 29, ../sass/screen.scss */
+hr {
+  border-color: white;
+  border-width: 2px;
+  max-width: 60%;
+  box-shadow: 0 0 6px rgba(1, 1, 1, 0.14);
+}
+
+/* line 40, ../sass/screen.scss */
+.navbar .divider {
+  height: 50px;
+  margin: 15px;
+  border: 0;
+  border-right: 1px solid #ffffff;
+}
+
+/* line 48, ../sass/screen.scss */
+.navbar a {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+/* line 53, ../sass/screen.scss */
+.navbar-brand {
+  font-size: 26px !important;
+  letter-spacing: 1.3px !important;
+}
+
+/* line 59, ../sass/screen.scss */
+.nav .button a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: auto;
+  height: 40px;
+  padding: 0 14px;
+  margin: 20px;
+  letter-spacing: 1.3px !important;
+  line-height: 40px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* line 76, ../sass/screen.scss */
+.solid {
+  background-color: #fff !important;
+  color: #ee6459 !important;
+}
+/* line 80, ../sass/screen.scss */
+.solid:hover {
+  color: #dc5348 !important;
+}
+
+/* line 85, ../sass/screen.scss */
+.outline {
+  border: 1px solid #fff;
+}
+
+/* line 91, ../sass/screen.scss */
 .block, .section, header {
   display: block;
   box-sizing: border-box;
@@ -9204,87 +9282,25 @@ body {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  max-height: 100vh;
   overflow: hidden;
   z-index: 0;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .section {
   padding-top: 80px;
 }
-/* line 44, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .section h1 {
   font-size: 46px;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 100px;
 }
 
-/* line 55, ../sass/screen.scss */
-hr {
-  border-color: white;
-  border-width: 2px;
-  max-width: 60%;
-  box-shadow: 0 0 6px rgba(1, 1, 1, 0.14);
-}
-
-/* line 64, ../sass/screen.scss */
-header {
-  overflow: hidden !important;
-  padding-top: 25vh;
-}
-/* line 71, ../sass/screen.scss */
-header h1 {
-  font-size: 72px;
-  letter-spacing: 3.5px;
-}
-/* line 75, ../sass/screen.scss */
-header h2 {
-  font-size: 26px;
-  letter-spacing: 1.3px;
-}
-
-/* line 81, ../sass/screen.scss */
-.title {
-  z-index: 102;
-  text-shadow: 0 0 6px rgba(1, 1, 1, 0.14);
-}
-
-/* line 87, ../sass/screen.scss */
-.intro {
-  margin-top: 20px;
-  text-shadow: 0 0 6px rgba(1, 1, 1, 0.14);
-  z-index: 101;
-}
-
-/* line 94, ../sass/screen.scss */
-#iphone {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  overflow: hidden;
-}
-/* line 107, ../sass/screen.scss */
-#iphone img {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  text-align: right;
-  align: right;
-  z-index: 0;
-  height: 90vh;
-  width: auto;
-}
-
-/* line 124, ../sass/screen.scss */
-#scroll-bg {
+/* line 126, ../sass/screen.scss */
+#scroll-bg, #periscope-bg, #order-bg {
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -9297,7 +9313,7 @@ header h2 {
   z-index: -1;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .hugebg {
   background-color: #141414;
   background-size: cover;
@@ -9305,23 +9321,136 @@ header h2 {
   background-attachment: fixed;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
+header {
+  overflow: hidden !important;
+  padding-top: 25vh;
+  box-shadow: inset 0 -15px 15px rgba(1, 1, 1, 0.7);
+}
+/* line 157, ../sass/screen.scss */
+header h1 {
+  font-size: 72px;
+  letter-spacing: 3.5px;
+}
+/* line 161, ../sass/screen.scss */
+header h2 {
+  font-size: 26px;
+  letter-spacing: 1.3px;
+  margin-bottom: 120px;
+}
+/* line 166, ../sass/screen.scss */
+header h3 {
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  font-weight: 400 !important;
+}
+/* line 172, ../sass/screen.scss */
+header .button {
+  min-width: 130px;
+  width: auto;
+  max-width: 50%;
+  margin: 40px auto 10px;
+  border-radius: 100px;
+}
+/* line 180, ../sass/screen.scss */
+header .button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1.8px !important;
+  text-transform: uppercase;
+  margin: 0 !important;
+}
+/* line 193, ../sass/screen.scss */
+header .solid a {
+  color: #66AACC !important;
+}
+/* line 196, ../sass/screen.scss */
+header .outline a {
+  color: #fff !important;
+}
+
+/* line 201, ../sass/screen.scss */
+.title {
+  z-index: 102;
+  text-shadow: 0 0 6px rgba(1, 1, 1, 0.14);
+}
+
+/* line 207, ../sass/screen.scss */
+.intro {
+  margin-top: 20px;
+  text-shadow: 0 0 6px rgba(1, 1, 1, 0.14);
+  z-index: 101;
+}
+
+/* line 214, ../sass/screen.scss */
+#iphone {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+/* line 227, ../sass/screen.scss */
+#iphone img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  align: right;
+  z-index: 0;
+  height: 90vh;
+  width: auto;
+}
+
+/* line 245, ../sass/screen.scss */
 #periscope {
   background-color: #f0f0f0;
   z-index: 100;
 }
-/* line 154, ../sass/screen.scss */
-#periscope h1 {
-  color: #dc5348;
-}
-
-/* line 159, ../sass/screen.scss */
-#periscope-bg {
-  background-image: url("../images/periscope-bg2.png");
+/* line 250, ../sass/screen.scss */
+#periscope .inner {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  clear: both;
+  overflow: hidden !important;
+  background-color: #66AACC;
+  box-shadow: inset 0 0 20px rgba(1, 1, 1, 0.35);
   padding: 6vh 0;
+  z-index: 1;
+}
+/* line 263, ../sass/screen.scss */
+#periscope .inner p {
+  max-width: 80%;
+  margin: 0 auto 40px;
+}
+/* line 269, ../sass/screen.scss */
+#periscope h1, #periscope h2 {
+  color: #dc5348 !important;
+}
+/* line 273, ../sass/screen.scss */
+#periscope h2 {
+  display: block;
+  position: relative;
+  clear: both;
+  margin: 40px auto;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
+#periscope-bg {
+  background-image: url("../images/periscope-bg2.png") !important;
+}
+
+/* line 287, ../sass/screen.scss */
 .icon {
   position: relative;
   margin: auto auto;
@@ -9332,24 +9461,60 @@ header h2 {
   margin-bottom: 40px;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 #order {
   background-image: url("../images/form-bg.png");
-  margin-bottom: 160px;
+  margin-bottom: 240px;
   -webkit-box-shadow: 0 0 35px rgba(1, 1, 1, 0.6);
   box-shadow: 0 0 35px rgba(1, 1, 1, 0.6);
 }
-/* line 186, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 #order h1 {
   margin-bottom: 30px;
 }
+/* line 312, ../sass/screen.scss */
+#order h2 {
+  margin-bottom: 60px;
+}
 
-/* line 192, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
+#order-bg {
+  background-image: url("../images/form-bg.png") !important;
+}
+
+/* line 324, ../sass/screen.scss */
+.form {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  clear: both;
+  padding: 20px 40px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  font-family: "Idealist Sans", sans-serif !important;
+}
+/* line 336, ../sass/screen.scss */
+.form legend {
+  font-size: 32px !important;
+  letter-spacing: 1.6px !important;
+  font-weight: 300 !important;
+  margin-bottom: 55px;
+}
+/* line 343, ../sass/screen.scss */
+.form label {
+  color: #218f6c !important;
+  font-size: 26px;
+  letter-spacing: 1.3px;
+  font-weight: 300;
+}
+
+/* line 352, ../sass/screen.scss */
 footer {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 160px;
+  height: 240px;
   position: fixed;
   bottom: 0;
   left: 0;

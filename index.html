@@ -27,10 +27,10 @@
             <li><a href="#periscope" class="pagescroll">Что такое Periscope ?</a></li>
             <li><a href="#order" class="pagescroll">Как заказать ?</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="button solid" href="#">Зарегестрироваться</a></li>
-            <li class="nav-divider"></li>
-            <li><a class="button outline"href="#">Войти</a></li>
+          <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
+            <li class="button"><a class="solid" href="#">Зарегестрироваться</a></li>
+            <li class="divider"></li>
+            <li class="button"><a class="outline"href="#">Войти</a></li>
           </ul>
         </div>
       </div>
@@ -40,17 +40,23 @@
   <header>
     <div class="hugebg" id="scroll-bg"></div>
     <div class="container-fluid">
-      <div class="col-xs-12 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-md-12 col-lg-6">
         <h1 class="text-center title">TrendStreamer</h1>
         <hr class="title">
-        <h2 class="text-center title">Биржа рекламы для Periscope<br>Первая в России<br><br></h2>
+        <h3 class="text-center title">Биржа рекламы для Periscope<br>Первая в России<br><br></h3>
         <h2 class="text-center intro">
           <strong>12 000</strong> блоггеров, готовых продивнуть ваш брэнд.<br>
           <strong>13 000</strong> рекламодателей, нуждающихся в рекламе.
         </h2>
+        <div class="button solid intro hidden-lg hidden-xl">
+          <a class="text-center" href="#">Зарегестрироваться</a>
+        </div>
+        <div class="button outline intro hidden-lg hidden-xl">
+          <a class="text-center" href="#">Войти</a>
+        </div>
       </div>
     </div>
-    <div id="iphone">
+    <div class="hidden-md hidden-sm hidden-xs" id="iphone">
       <img src="images/iphone.png" alt="">
     </div>
   </header>
@@ -60,14 +66,20 @@
     <div class="container">
       <h1 class="text-center">Что такое Periscope ?</h1>
     </div>
-    <div class="hugebg" id="periscope-bg">
+    </div>
+    <div class="inner">
+      <div class="hugebg hidden-md hidden-sm hidden-xs" id="periscope-bg"></div>
       <div class="container-fluid">
         <div class="col-lg-2 col-md-12 col-xs-12">
           <div class="icon"><img src="" alt=""></div>
         </div>
         <div class="col-lg-4 col-md-12 col-xs-12">
           <h3 class="text-center">Большой охват и вовлеченность</h3>
-          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eligendi esse et, harum ipsam nulla, officia officiis perferendis perspiciatis repellat sit, suscipit voluptate voluptatum. Aliquid consectetur distinctio et expedita explicabo in laudantium, modi nam non nostrum sed vero voluptate voluptates.</p>
+          <p class="text-center">
+            В среднем, трансляции в Periscope длятся
+            15 минут. За это время ее успевает
+            посмотреть более 100 тысяч человек
+            и оставить свыше 10 тысяч комментариев.</p>
         </div>
 
         <div class="col-lg-2 col-md-12 col-xs-12">
@@ -97,10 +109,15 @@
         </div>
       </div>
     </div>
+    <h2 class="text-center">
+      Более подробную информацию вы найдете<br>
+      в личном кабинете после
+    </h2>
   </section>
 
   <!--ORDER-SECTION-->
-  <section class="section hugebg" id="order">
+  <section class="section" id="order">
+    <div class="hugebg" id="order-bg"></div>
     <div class="container">
       <div class="col-lg-12">
         <h1 class="text-center">Как заказать рекламу ?</h1>
@@ -110,14 +127,42 @@
           Заполните эту форму и мы все сделаем за вас.
         </h2>
       </div>
+      <form class="form-horizontal form">
+        <fieldset>
+          <legend class="text-center text-uppercase">Заказать Рекламу</legend>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Имя</label>
+            <div class="col-lg-4">
+              <input class="form-control" id="inputEmail" placeholder="Гмя" type="text">
+            </div>
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-4">
+              <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-12">
+              <button type="submit" class="button solid">Оформить</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </div>
-
   </section>
 
 
   <!--FOOTER-->
   <footer>
-
+    <div class="container">
+      <div class="col-lg-6 col-md-12">
+        <h3>Контакты</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque deleniti dignissimos ea earum harum labore magnam minus soluta suscipit?</p>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <h3>Контакты</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem deserunt dolore ea eos fugiat, magni nostrum quo ratione sequi!</p>
+      </div>
+    </div>
   </footer>
 
   <!--SCRIPTS-->
@@ -129,5 +174,15 @@
   <script src="js/scroll.js"></script>
   <!--SMOOTH-SCROLLING-->
   <script src="js/smoothscroll.js"></script>
+  <!--NAVBAR-TOGGLE-FIX-->
+  <script>
+    if ($(window).width() <= 768)
+    {
+      $('.nav a').on('click', function(){
+        //$('.btn-navbar').click(); //bootstrap 2.x
+        $('.navbar-toggle').click() //bootstrap 3.x by Richard
+      });
+    }
+  </script>
 </body>
 </html>
