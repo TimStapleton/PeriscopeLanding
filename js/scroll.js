@@ -10,7 +10,7 @@ $(window).scroll(function(){
   })
   //And some more parallax effect for intro text and logo
   $('.title').css({
-      'transform' : 'translate(0px, '+  (pxScroll)/7 +'px)'
+      'transform' : 'translate(0px, '+  (pxScroll)/5 +'px)'
   })
   $('.intro').css({
       'transform' : 'translate(0px, '+  (pxScroll)/3 +'px)'
