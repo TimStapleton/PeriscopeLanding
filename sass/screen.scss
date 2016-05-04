@@ -14,7 +14,7 @@ body {
   width: 100%;
   overflow-x: hidden;
 
-  background-color: #000;
+  background-color: #fff;
 
   height: auto;
 }
@@ -67,22 +67,24 @@ hr {
 
   letter-spacing: 1.3px !important;
   line-height: 40px;
+  text-transform: uppercase;
 
   border-radius: 20px;
-
-  text-transform: uppercase;
 }
 
 .solid {
   background-color: #fff !important;
   color: $brand-lighter !important;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
     color: $brand-primary !important;
+    transition: all 0.5s ease-in-out;
   }
 }
 
 .outline{
+  transition: all 0.5s ease-in-out;
   border: 1px solid #fff;
 }
 
@@ -301,10 +303,12 @@ header {
 $footer-height: 240px;
 
 #order {
-  background-image: url('../images/form-bg.png');
+  background-color: $greenish;
   margin-bottom: $footer-height;
 
   @include box-shadow(0 0 35px rgba(1,1,1, 0.6));
+
+  padding-bottom: 40px;
 
   h1 {
     margin-bottom: 30px;
@@ -321,6 +325,29 @@ $footer-height: 240px;
 }
 
 //FORM SETTINGS
+.form-field {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 5px;
+
+  background-color: #eefffa;
+  border: 2px solid rgba(176, 176, 176, 0.6);
+  -webkit-border-radius: 10px;
+  -moz-border-radius:10px;
+  border-radius: 10px;
+
+  font-family: "Idealist Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: $greenish !important;
+
+  overflow: show;
+
+  &:focus {
+    border: 2px solid $greenish;
+  }
+}
+
 .form {
   display: block;
   box-sizing: border-box;
@@ -345,6 +372,48 @@ $footer-height: 240px;
     font-size: 26px;
     letter-spacing: 1.3px;
     font-weight: 300;
+  }
+  input {
+    @extend .form-field;
+
+    line-height: 26px;
+    height: 44px;
+  }
+  textarea {
+    @extend .form-field;
+
+    resize: none;
+    min-height: 44px;
+    height: 132px;
+    max-height: 176px;
+    line-height: 26px;
+  }
+  button {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    clear: both;
+
+    padding: 0 60px;
+    margin: 5px auto;
+
+    min-width: 120px;
+    width: auto;
+    max-width: 80%;
+    height: 60px;
+    line-height: 60px;
+
+    background-color: $greenish;
+    border: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    font-family: "Idealist Sans", sans-serif !important;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
   }
 }
 

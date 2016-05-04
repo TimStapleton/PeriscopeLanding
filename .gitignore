@@ -48,3 +48,6 @@ Temporary Items
 
 #compass sass-cache
 .sass-cache
+
+#intellij idea files
+.idea

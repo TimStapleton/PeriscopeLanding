@@ -3,7 +3,7 @@ $(window).scroll(function(){
     var pxScroll = $(this).scrollTop();
     //Screen Height
     var screenHeight = $(window).height();
-    console.log (screenHeight);
+    //console.log (screenHeight);
     
     //Scroll variables for different sections
     var scrollHeader = -pxScroll/10,
