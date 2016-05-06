@@ -4,6 +4,7 @@
 
 $web-font-path: "https://fonts.googleapis.com/css?family=Lato:300,400,700" !default;
 @import url($web-font-path);
+
 // Navbar =====================================================================
 
 .navbar {
@@ -347,7 +348,7 @@ a.list-group-item {
 
   &-header,
   &-footer {
-    background-color: $table-bg-hover;
+    background-color: transparent;
     border: none;
     border-radius: 0;
   }

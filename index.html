@@ -35,17 +35,17 @@
             <li><a href="#order" class="pagescroll">Как заказать ?</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
-            <li class="button"><a class="solid" href="#">Зарегестрироваться</a></li>
+            <li class="button"><button class="solid" id="register" data-toggle="modal" data-target="#sampleModal">Зарегестрироваться</button></li>
             <li class="divider"></li>
-            <li class="button"><a class="outline"href="#">Войти</a></li>
+            <li class="button"><button class="outline" id="login">Войти</button></li>
           </ul>
         </div>
       </div>
   </nav>
 
   <!--HEADER-->
-  <header>
-    <div class="hugebg" id="scroll-bg"></div>
+  <header class="hugebg">
+    <div class="hugebg hidden-md hidden-sm hidden-xs" id="scroll-bg"></div>
     <div class="container-fluid">
       <div class="col-xs-12 col-md-12 col-lg-6">
         <h1 class="text-center title wow fadeInUp">TrendStreamer</h1>
@@ -56,10 +56,10 @@
           <strong>13 000</strong> рекламодателей, нуждающихся в рекламе.
         </h2>
         <div class="button solid intro hidden-lg hidden-xl">
-          <a class="text-center" href="#">Зарегестрироваться</a>
+          <button class="text-center" data-toggle="modal" data-target="#register-modal">Зарегестрироваться</button>
         </div>
         <div class="button outline intro hidden-lg hidden-xl">
-          <a class="text-center" href="#">Войти</a>
+          <button class="text-center" data-toggle="modal" data-target="#login-modal">Войти</button>
         </div>
       </div>
     </div>
@@ -68,10 +68,55 @@
     </div>
   </header>
 
+  <!-- Large modal
+  <button type="button" class="" data-toggle="modal" data-target="#sampleModal">Large modal</button>-->
+
+  <div class="modal fade" id="sampleModal" tabindex="-1" role="dialog" aria-labelledby="registerModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center text-uppercase" id="registerModal">Регистрация</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-8 ">.col-md-4 .col-md-offset-4</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+            <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9">
+              Level 1: .col-sm-9
+              <div class="row">
+                <div class="col-xs-8 col-sm-6">
+                  Level 2: .col-xs-8 .col-sm-6
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                  Level 2: .col-xs-4 .col-sm-6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   <!--PERISCOPE-SECTION-->
   <section class="section"  id="periscope">
     <div class="container">
       <h1 class="text-center">Что такое Periscope ?</h1>
+
     </div>
     </div>
     <div class="inner">
@@ -190,6 +235,63 @@
     </div>
   </footer>
 
+  <!--REGISTER-MODAL-->
+  <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="vertical-alignment-helper">
+      <div class="modal-dialog vertical-align-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span>
+
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Создание аккаунта</h4>
+
+          </div>
+          <div class="modal-body">
+            <form  method="post" class="form-horizontal" action="javascript:void(null);" onsubmit="CheckCode();"> <input type='hidden' name='csrfmiddlewaretoken' value='0Wprf6G9Vc0Ji47WfAHBNnDfC7Y1OoP7' />
+
+              <div class="alert alert-warning" role="alert" hidden id="WrongNumber">
+
+              </div>
+              <div class="form-group">
+                <label for="username" class="col-sm-3 control-label"> Телефон-логин </label>
+                <div class="col-sm-4">
+                  <input type="text" id="username" class="form-control"  name="username" size="16" required placeholder="введите телефон">
+                </div>
+                <div >
+                  <div class="btn btn-primary btn-sm" id="SendCode" onclick="CheckMobileNumber();">
+                    Отправить код
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="checkpass" class="col-sm-3 control-label "> Код смс </label>
+                <div class="col-sm-4" id="CodeSpace">
+                  <input type="text" class="form-control" id="checkpass"  name="checkpass" size="16" required placeholder="введите код">
+                </div>
+              </div>
+
+
+
+              <div class="checkbox">
+                <label class="col-sm-5 col-sm-offset-3"><input type="checkbox" name="agreement" id="OfertaAgreement">
+                  <a href="/oferta/" target="_blank"> Я прочел и согласен с договором оферты </a>
+                </label>
+              </div>
+
+              <div  style="margin:40px;"></div>
+
+              <div class="text-center"><input type="submit" class="btn btn-primary"  value="Создать аккаунт"> </div>
+            </form>
+            <div  style="margin:30px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--SCRIPTS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -201,15 +303,5 @@
   <script src="js/scroll.js"></script>
   <!--SMOOTH-SCROLLING-->
   <script src="js/smoothscroll.js"></script>
-  <!--NAVBAR-TOGGLE-FIX-->
-  <script>
-    if ($(window).width() <= 768)
-    {
-      $('.nav a').on('click', function(){
-        //$('.btn-navbar').click(); //bootstrap 2.x
-        $('.navbar-toggle').click() //bootstrap 3.x by Richard
-      });
-    }
-  </script>
 </body>
 </html>
